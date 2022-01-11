@@ -2,85 +2,66 @@
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
+    box-sizing: border-box;
+    font-size: 100%;
 }
 
-.hero{
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    overflow: hidden;
+.Primeira-Pagina {
+    background-image: url("https://portal.crea-sc.org.br/wp-content/uploads/2018/12/fundo-azul-claro.jpg");
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 24px;
+    border-bottom: rgb(253, 201, 59) solid 0.4px;
+}
+
+.NavBar-Header {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
 .logo{
-    width: 250px;
-    height:250px;
-    margin-top: 10px;
-    margin-left: 180px;
-}    
+    width: 100px;
+    height: 85px;
+}   
 
-.navbar{
-    width: 100%;
-    height: 15%;  
+.twobody {
+    
+    height: 100vh;
+    
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.content{
+.content {
     color: #fbfcfd;
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    overflow: hidden;
-    animation-iteration-count: infinite;
-    animation:
-        content 2.5s steps(30, end),
-        blink-animation .2s step-end infinite;
+    text-align: center;
 }  
-    
-.start{
+
+.start {
     font-size: 45px;
-    padding-left: 300px;
-    padding-top: 30px;
+    margin: 0 auto;
     font-family:monospace;
     font-style: oblique;
     color: rgba(4, 4, 4, 0.56);
-    text-align: center;
-    align-items: center;
-    overflow: hidden;
-    animation-iteration-count: infinite;
-    animation:
-        linear,
-        start 2.5s steps(30, end),
-        blink-animation .2s  step-end infinite;
 }
 
-@keyframes content {
-    from {width: 0 }
-    to { width: 50% }
-}
 
-@keyframes blink-animation {
-    from, to {border-color: transparent}
-    50% { border-color: rgb(0, 0, 0)}
-}
-
-.menu{
-    display: block;
-    width: 25px;
-    margin: 40px auto 0;
-    cursor: pointer;
-}
-
-a{
+a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bolder;
     color: black;
 }
 
-.empresa{
+.empresa {
     font-style: italic;
     text-align: center;
     font-weight: bold;
@@ -90,117 +71,148 @@ a{
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.633);
 }
 
-.sobre{
+.sobre {
     width: 70%;
-    height: 50%;
-    text-align: justify;
+    /* height: 50%; */
     margin-top: 50px;
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 15%;
-    padding-bottom: 5%;
+    margin: 0 auto;
 }
 
-#togo{
+#togo {
+    padding: 20px;
     font-size: 14pt;
-    line-height: 130%;
+    line-height: 1.4;
 }
 
-.perguntas{
-    margin-top: 50px;
-    margin-left: 80px;
+.Passos-Para-Programar {
+}
+
+.importancia_programacao{
+    width: 80%;
+}
+
+.perguntas {
+    margin-top: 5%;
+    margin-left: 5%;
     font-weight: bold;
-    font-size: 20pt;
+    font-size: 18pt;
+    font-family: sans-serif;
+    padding: 14px;
+}
+
+.motivos {
+    margin-left: 5%;
+    font-weight: bold;
+    font-size: 18pt;
     font-family: sans-serif;
 }
 
-.respostas{
-    margin: 25px 0 0 10%;
+
+.respostas {
+    margin-left: 10%;
     font-size: 14pt;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
-    width: 75%;
     letter-spacing: 0.5px;
     line-height: 170%;
     color: #333;
 }
-.motivos{
-    margin-top: 50px;
-    margin-left: 0px;
-    font-weight: bold;
-    font-size: 20pt;
-    font-family: sans-serif;
-}
-
-.importancia_programacao{
-    padding-top: 90px;
-    width: 80%;
-}
-
-ul{
+/* ul {
     margin: 30px 0 0 100px;
     font-size: 12pt;
     line-height: 170%;
-}
+} */
 
-.linkcadastro{
+.linkcadastro {
     font-size: 13pt;
     font-weight: bold;
     font-style: normal;
 }
 
-p{
-    font-size: 15pt;
-}
-
-.txtsub{
-    font-size: 12pt;
-    margin: 1px 0  0 8%;
-}
-
-.twobody{
-    background-image: url("https://portal.crea-sc.org.br/wp-content/uploads/2018/12/fundo-azul-claro.jpg");
-    height: auto;
+.hero {
+    padding: 20px;
 } 
 
-.forme{
-    text-align: center;
-    margin-top: 150px;
-    text-transform: uppercase;
-    color: white;
-    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+.Passos-Para-Programar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 30px;
 }
 
-.referencia{
+.Passos-Para-Programar-Topicos {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.Cursos-plataforma {
+    padding: 15px;
+    margin-left: 5%;
+}
+
+.Cursos-plataforma h3 {
+    font-weight: bold;
+    font-size: 18pt;
+    font-family: sans-serif;
+}
+
+.txtsub {
+    font-size: 13pt;
+    font-weight: 300;
+    font-style: italic; 
+}
+
+.Nome-Curso ul {
+    line-height: 1.8;
+}
+
+main article {
+    width: 500px;
+    margin-left: 5%;
+    margin-bottom: 50px;
+    border-bottom: black solid 0.4px;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+main article p {
+    font-size: 14pt;
+    font-style:oblique;
+}
+
+footer {
+    background-color: black;
+    height: 200px;
+    margin-top: 50px;
+    padding: 24px;
+}
+
+.contatos {
+    color: white;
+    text-shadow: 0.5px 0.5px 0.5px rgb(0, 58, 250);
+    font-style: italic;
+    font-size: 20pt;
+    
+}
+
+.forme {
+    text-align: center;
+    margin-top: 24px;
+    color: white;
+    font-style: italic;
+    font-size: 14pt;
+}
+
+.referencia {
     font-size: 13pt;
     font-weight: normal;
     text-transform: none;
     color: black;
 }
 
-.header{
-    height: 10%;
-    width: 100%;
-    background-color: black;
-}
-
-footer{
-    background-color: black;
-    margin-top: 5%;
-    padding-top: 5%;
-    height: 23em;
-    width: auto;
-}
-
-.contatos{
-    color: white;
-    text-shadow: 0.5px 0.5px 0.5px rgb(255, 255, 255);
-    font-style: italic;
-    font-size: 20pt;
-    
-}
-
-.social-links{
+.social-links {
     text-align: center;
     margin-left: 0;
-
 }
