@@ -81,8 +81,10 @@ a {
 
 #togo {
     padding: 20px;
-    font-size: 14pt;
+    font-size: 1.1em;
     line-height: 1.4;
+    font-style: italic;
+    font-weight: 200;
 }
 
 .Passos-Para-Programar {
@@ -169,7 +171,7 @@ a {
 }
 
 main article {
-    width: 500px;
+    width: 700px;
     margin-left: 5%;
     margin-bottom: 50px;
     border-bottom: black solid 0.4px;
@@ -180,6 +182,7 @@ main article {
 main article p {
     font-size: 14pt;
     font-style:oblique;
+    text-align: center;
 }
 
 footer {
@@ -193,7 +196,9 @@ footer {
     color: white;
     text-shadow: 0.5px 0.5px 0.5px rgb(0, 58, 250);
     font-style: italic;
-    font-size: 20pt;
+    font-size: 24pt;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 

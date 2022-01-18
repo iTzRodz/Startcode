@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,137 +7,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/Startcode/paginas/estilo/cadastro.css">
     <title>Cadastro de Cliente</title>
-    <style>
-        .cadastro{
-            width: 65%;
-            height: 65%;
-            margin-left: 15%;
-        }   
-        
-        a {
-            font-size: 14pt;
-        }  
-    </style>
-    
-    <Script>
-    document.addEventListener("DOMContentLoaded",function(){            
-        
-        function cadastrar(){            
-            alert(" Cadastro realizado com sucesso!")               
-        }
-        
-        var cadastrando = document.querySelector("#btncadastro");
-        cadastrando.addEventListener("click", cadastrar);      
-    });
-    </Script>
 
 </head>
 <body>
 
-    <div class="container">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mt-4 mb-4 border-bottom ">
-          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-          </a>
-    
-          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" id="">
-            <li><a href="/index.html" target="_blank" class="nav-link px-2 link-dark">Inicio</a></li>
-          </ul> 
+    <div class="">
+        <header>
+            <img src="/Startcode/logo/logo.png"  height="85px" width="100px" alt="Logo start code">
+            <nav class="NavBar-Header">
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" id="">
+                    <li><a href="Startcode\index.html" target="_blank" class="nav-link px-2 link-dark">Inicio</a></li>
+                    <li><a href="#togo" class="nav-link px-2 link-dark">Sobre</a></li>
+                    <li><a href="#contatos" id="contatos" class="nav-link px-2 link-dark">Contatos</a></li>
+                </ul> 
+            </nav>
         </header>
-    </div> <!--Final da class container -->
+    </div>
 
-<div class="container">
-    <img src="/Startcode/logo/logo.png"  height="250px" width="250px" alt="Logo start code">
-    <h1 class="text-center mt-5">Cadastre-se</h1>
+    <div class="container">
+        <h1 class="text-center mt-5">Cadastre-se</h1>
 
-    <div class="cadastro"> 
-        <form>
-            <div class="row border mt-3">
-                <label for="txttitulo" class="form-label p-2 mb-1 bg-primary text-white">Dados de login</label>
-            </div>
-    
-        <div class="row border sm-3">      <!-- inicio dados de login -->              
-                                 <!-- email -->
-        <div class="col-sm-6">
-            <label for="txtval" class="form-label mt-3">E-mail</label>
-            <div class="input-group"> 
-                <span class="input-group-text" id="basic-addon1">@</span>
-                <input type="text" class="form-control" id="txtval">
-            </div>
-        </div>
-            
-        <div class="col-sm-6">
-            <label for="txtval" class="form-label mt-3">Confirmação de E-mail</label>
-            <div class="input-group"> 
-                <span class="input-group-text" id="basic-addon1">@</span>
-                 <input type="text" class="form-control" id="txtval">
-            </div>
-        </div>
-                                       <!-- Senha -->
-        <div class="col-sm-6 mt-3 mb-4">
-            <label for="txtval" class="form-label">Senha</label>
-            <div class="input-group "> 
-                <span class="input-group-text" id="basic-addon1"><i class="bi bi-key"></i></span>
-                 <input type="password" class="form-control" id="txtval">
-            </div>
-        </div>
-            
-        <div class="col-sm-6 mt-3 mb-4">
-            <label for="txtval" class="form-label">Senha</label>
-            <div class="input-group"> 
-                <span class="input-group-text" id="basic-addon1" ><i class="bi bi-key"></i></span>
-                <input type="password" class="form-control pb-1" id="txtval">
-                 <br>
-            </div>
-        </div>
-        <br>    
-    </div> <!--Final dos dados de login-->
+        <div class="cadastro"> 
+            <form action="cadastro.php" method="POST">
+                <div class="row border mt-3 ">
+                    <label for="txttitulo" class="form-label p-2 mb-0 bg-dark text-light">Dados de login</label>
+                </div>
         
-        <!-- inicio dados pessoais -->
-        <div class="row border mt-3">
-            <label for="txttitulo" class="form-label p-2 mb-1 bg-primary text-white">Dados pessoais</label>
-        </div>
-    
-    <div class="row border pb-12"> 
-        <div class="row border-sm-6">
-            <div class="col-md-7 mt-3">
-                <label for="inputcompname" class="form-label">Nome Completo</label><br>
-                <input type="text" class="form-control" id="txtnome">           
-            </div>
-            
-            <div class="col-md-5 mt-3">
-                <label for="txtDATE" class="form-label">Data de nascimento</label>
-                <input type="date" class="form-control" id="txtdate">
-            </div>
-            <div class="col-sm-5 mt-3">
-                 <label for="txtrg" class="form-label" >RG</label>
-                <input type="text" class="form-control" id="txtrg" required maxlength="11">
-            </div>       
-            
-            <div class="col-sm-5">
-                <label for="txtcodigo" class="form-label mt-3 ">CPF</label>
-                <input type="text" class="form-control" id="txtcodigo" placeholder="000-000-000-00" required maxlength="11">
-            </div>
-            <div class="col-sm-3 mt-2 mb-4">
-                <label for="selcatsex" class="form-label">Sexo</label>
-                <select id="selcatsex" class="form-select">
-                    <option value="" selected>Selecione</option>
-                    <option value="1">Masculino</option>
-                    <option value="2">Feminino</option>
-                </select>
-            </div>
-        </div>                   
-    </div>                     <!-- Fim  Dados pessoais-->
-      
-        <div class="col-sm-12 text-center mb-3 mt-3">
-           <a href="/paginas/confirmacao.html" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-primary" name = "btncadastro" id="btncadastro">Cadastrar</button> 
-           </a> 
+                <div class="row border sm-12">                
+                    <div class="col-sm-6">
+                        <label for="txtval" class="form-label mt-3">E-mail</label>
+                        <div class="input-group"> 
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" id="txtval" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                        <label for="txtval" class="form-label mt-3">Confirmação de E-mail</label>
+                        <div class="input-group"> 
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" id="txtval" name="confirmar-email" placeholder="Confirmar Email">
+                        </div>
+                    </div>
+                                            
+                <div class="col-sm-6 mt-3 mb-4">
+                    <label for="txtval" class="form-label">Senha</label>
+                    <div class="input-group "> 
+                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-key"></i></span>
+                        <input type="password" class="form-control" id="txtval" name="senha" placeholder="Senha">
+                    </div>
+                </div>
+                    
+                <div class="col-sm-6 mt-3 mb-4">
+                    <label for="txtval" class="form-label">Senha</label>
+                    <div class="input-group"> 
+                        <span class="input-group-text" id="basic-addon1" ><i class="bi bi-key"></i></span>
+                        <input type="password" class="form-control pb-1" id="txtval" name="confirmar-senha" placeholder="Confirmar sua senha">
+                        <br>
+                    </div>
+                </div>
+                <br>    
         </div> 
-    </form>
-
-</div>
-</div>  
-
+                
+            <div class="row border mt-3 border-dark">
+                <label for="txttitulo" class="form-label p-2 mb-0 bg-dark text-light">Dados pessoais</label>
+            </div>
+            
+            <div class="row border pb-12"> 
+                <div class="row border-sm-6">
+                    <div class="col-md-12 mt-3">
+                        <label for="inputcompname" class="form-label">Nome Completo</label><br>
+                        <input type="text" class="form-control" id="txtnome" name="nome" placeholder="Nome completo">           
+                    </div>
+                    
+                    <div class="col-md-4 mt-3 p-2">
+                        <label for="txtDATE" class="form-label">Data de nascimento</label>
+                        <input type="date" class="form-control" id="txtdate" name="data-nasc">
+                    </div>
+                    
+                    <div class="col-md-4 p-2">
+                        <label for="txtcodigo" class="form-label mt-3 ">CPF</label>
+                        <input type="text" class="form-control" id="txtcodigo" placeholder="000.000.000-00" required maxlength="14" name="cpf">
+                    </div>             
+                    
+                    <div class="col-md-3 mt-3 p-2">
+                        <label for="selcatsex" class="form-label">Sexo</label>
+                        <select id="selcatsex" class="form-select" name="sexo">
+                            <option value="" >Selecione</option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Feminino</option>
+                        </select>
+                    </div>
+                    
+                    <div class="col-md-4 mt-3 mb-3">
+                        <label for="txtTEL" class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" id="txtel" name="tel" placeholder="Seu telefone">
+                    </div>
+                </div>                   
+            </div>                   
+              
+            <div class="col-sm-12 text-center mb-3 mt-3">
+                <input type="submit"  name="btncadastro" class="btn-grad"></input> 
+            </div> 
+        </form>
+    </div>
 </body>
 </html>
