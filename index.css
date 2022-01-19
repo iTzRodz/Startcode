@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -25,7 +26,7 @@ header {
     gap: 32px;
 }
 
-.logo{
+.logo {
     width: 100px;
     height: 85px;
 }   
@@ -40,20 +41,6 @@ header {
     align-items: center;
 }
 
-.content {
-    color: #fbfcfd;
-    text-align: center;
-}  
-
-.start {
-    font-size: 45px;
-    margin: 0 auto;
-    font-family:monospace;
-    font-style: oblique;
-    color: rgba(4, 4, 4, 0.56);
-}
-
-
 a {
     text-decoration: none;
     text-transform: uppercase;
@@ -61,33 +48,17 @@ a {
     color: black;
 }
 
-.empresa {
-    font-style: italic;
+.content {
+    color: #fbfcfd;
     text-align: center;
-    font-weight: bold;
-    font-size: 50pt;
-    padding-left: 10px;
-    margin-top: 50px;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.633);
-}
+}  
 
-.sobre {
-    width: 70%;
-    /* height: 50%; */
-    margin-top: 50px;
-    font-family: 'Times New Roman', Times, serif;
+.apresentacao-startcode {
+    font-size: 45px;
     margin: 0 auto;
-}
-
-#togo {
-    padding: 20px;
-    font-size: 1.1em;
-    line-height: 1.4;
-    font-style: italic;
-    font-weight: 200;
-}
-
-.Passos-Para-Programar {
+    font-family:monospace;
+    font-style: oblique;
+    color: rgba(4, 4, 4, 0.56);
 }
 
 .importancia_programacao{
@@ -110,7 +81,6 @@ a {
     font-family: sans-serif;
 }
 
-
 .respostas {
     margin-left: 10%;
     font-size: 14pt;
@@ -120,11 +90,6 @@ a {
     line-height: 170%;
     color: #333;
 }
-/* ul {
-    margin: 30px 0 0 100px;
-    font-size: 12pt;
-    line-height: 170%;
-} */
 
 .linkcadastro {
     font-size: 13pt;
@@ -168,9 +133,11 @@ a {
 
 .Nome-Curso ul {
     line-height: 1.8;
+    font-size: 12pt;
+    font-weight: 500;
 }
 
-main article {
+.link-cadastro {
     width: 700px;
     margin-left: 5%;
     margin-bottom: 50px;
@@ -179,10 +146,42 @@ main article {
     font-style: italic;
 }
 
-main article p {
+.link-cadastro p {
     font-size: 14pt;
     font-style:oblique;
     text-align: center;
+}
+
+.projeto-startcode {
+    height: 100vh;
+}
+
+.sobre {
+    width: 70%;
+    /* height: 50%; */
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 auto;
+}
+
+.empresa {
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50pt;
+    padding: 30px;
+    margin-top: 10%;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.633);
+}
+
+.projeto-startcode-texto {
+    padding: 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-style: italic;
+    
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
@@ -190,24 +189,26 @@ footer {
     height: 200px;
     margin-top: 50px;
     padding: 24px;
+    text-align: center;
 }
 
 .contatos {
     color: white;
-    text-shadow: 0.5px 0.5px 0.5px rgb(0, 58, 250);
+    text-shadow:-2px 1px 0px rgba(135,135,135,0.56) ;
     font-style: italic;
-    font-size: 24pt;
-    font-weight: 600;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+    font-size: 30pt;
+    font-weight: 400;
+    font-family:sans-serif;
+
 }
 
-.forme {
+.myself {
     text-align: center;
     margin-top: 24px;
     color: white;
-    font-style: italic;
-    font-size: 14pt;
+    font-weight: 400;
+    font-size: 20pt;
+    font-family: 'Kalam', cursive;
 }
 
 .referencia {
