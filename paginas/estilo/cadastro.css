@@ -2,7 +2,14 @@
     font-family: sans-serif;
 }
 body {
-    background-image: linear-gradient( 109.6deg,  rgba(45,116,213,1) 11.2%, rgba(121,137,212,1) 91.2% );
+    /* background-image: linear-gradient( 109.6deg,  rgba(45,116,213,1) 11.2%, rgba(121,137,212,1) 45.2% ); */
+    /* background-color: #B0C4DE; */
+    /* background: #2980b9;  
+    background: -webkit-linear-gradient(to right, #2c3e50, #2980b9); 
+    background: linear-gradient(to right, #2c3e50, #2980b9);  */
+    
+    
+    background-image: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%);
     font-weight: 300;
     color: black;
     
@@ -23,13 +30,31 @@ header {
 .NavBar-Header{
     color: white;
 }
-
 h1 {
-    color: white;
+    color: #000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.633);
+    font-weight: bold;
+    font-size: 32pt;
+    font-style: italic;
+    border-bottom: solid 0.4px white;
+    
 }
-/* .cadastro {
-    border: #000 solid 0.4px;
-} */
+.container {
+    background-image: linear-gradient( 135deg, #52E5E7 10%, #130CB7 130%);
+    box-shadow: 3px 2px 5px rgba(17, 17, 17, 0.55);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    margin-top: 3%;
+    border-radius: 7%;
+    padding: 15px;
+    margin-bottom: 50px;
+    width: 720px;
+}
+
+#dado-pessoal {
+    align-items: baseline;
+    justify-content: center;
+}
 
 a {
     font-size: 14pt;
@@ -37,7 +62,6 @@ a {
     text-transform: uppercase;
     font-weight: bolder;
     color: white;
-    
 }  
 
 #contatos {
@@ -46,7 +70,6 @@ a {
 
 label {
     font-weight: 700;
-    /* opacity: .70; */
 }
 
 .btn-grad {background-image: linear-gradient(to right, #83a4d4 0%, #b6fbff  51%, #83a4d4  100%)}
@@ -60,18 +83,17 @@ label {
    color: black;            
    box-shadow: 0 0 20px #eee;
    border-radius: 15px;
-    font-weight: 700;
+   font-weight: 700;
 }
 
- .btn-grad:hover {
+.btn-grad:hover {
    background-position: right center; /* change the direction of the change here */
    color: black;
    text-decoration: none;
- }
+}
 
 .cadastro{
     width: 65%;
     height: 65%;
     margin-left: 15%;
 }   
-

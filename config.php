@@ -1,4 +1,3 @@
-
 <?php
     $dbHost = 'Localhost';
     $dbUsername = 'root';
@@ -10,5 +9,4 @@
     if($conexao->connect_errno) {
         echo "Erro";
     }
-    
 ?>
