@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/paginas/estilo/login.css">
+</head>
+<body>
+    <main>
+        <section>
+            <form action="Login.php" method="post">
+                <div class="login">
+                    <div class="topicos-login">
+                        <label for="email" >Email</label>
+                        <div>
+                            <input type="email" name="email" id="email-usuario" placeholder="Nome Completo">
+                        </div>
+                    </div>
+                    
+                    <div class="topicos-login">
+                        <label for="senha">Senha</label>
+                        <div>
+                            <input type="password" name="senha" id="senha-usuario" placeholder="Senha">
+                        </div>
+                    </div>
+                    
+                    <div class="topicos-login">
+                        <button type="submit">Logar</button>
+                    </div>
+
+                    <div class="topicos-login">
+                        <p id="topicos-login-texto">Ainda não se cadastrou na StartCode? <a href="/paginas/cadastro.html" id="cadastrar" target="_blank"><strong>Cadastrar-se</strong> </a></p>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </main>
+</body>
+</html>

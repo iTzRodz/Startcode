@@ -6,3 +6,5 @@ function ValidarCPF() {
         cpf.value += '-'
     }
 }
+
+

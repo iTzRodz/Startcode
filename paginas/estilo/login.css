@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    border: none;
+    
+}
+
+body {
+    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    margin: 0 auto;
+    margin-top: 15%;
+}
+
+.login {
+    padding: 15px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 20px;
+    height: 430px;
+    width: 350px;
+    background-image: radial-gradient( circle 993px at 0.5% 50.5%,  rgba(137,171,245,0.37) 0%, rgba(245,247,252,1) 100.2% );
+    justify-items: center;
+}
+
+.topicos-login {
+    text-align: center;
+    margin: 40px 0px 25px 0px;
+    font-size: 20pt;
+}
+
+.logar {
+    padding: 10px;
+    margin-top: 15%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    text-align: center;
+    height: 40px;
+    width: 270px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+}
+
+#topicos-login-texto{
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+#cadastrar {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+/* ::-webkit-input-placeholder {
+    color: black;
+}
+ 
+::-moz-placeholder { 
+    color:black;  
+}
+ 
+::-moz-placeholder { 
+    color: black;  
+}
+ 
+::-ms-input-placeholder {  
+    color: black;  
+} */
