@@ -35,8 +35,15 @@ section {
 
 .topicos-login {
     text-align: center;
-    margin: 40px 0px 25px 0px;
+    margin: 35px 0px 25px 0px;
     font-size: 20pt;
+}
+
+#topicos-login-texto{
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: sans-serif;
+    padding: 5px;
 }
 
 .logar {
@@ -65,12 +72,6 @@ button {
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.3rem;
-}
-
-#topicos-login-texto{
-    font-size: 1.1rem;
-    font-weight: 500;
-    font-family: sans-serif;
 }
 
 #cadastrar {

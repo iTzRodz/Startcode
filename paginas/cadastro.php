@@ -6,7 +6,7 @@
 
 if(isset($_POST['btncadastro'])) {
     
-    include_once('C:\xampp\htdocs\StartCode\config.php');
+    include_once('C:\xampp\htdocs\StartCode\BancoDados\configBanco.php');
     
     $email = $_POST['email'];
     $nome = $_POST['nome'];
@@ -18,7 +18,7 @@ if(isset($_POST['btncadastro'])) {
     $result = mysqli_query($conexao, "INSERT INTO Dado_pessoal(email, nome, data_nasc, cpf, sexo, telefone) VALUES('$email', '$nome', '$nascimento', '$cpf', '$sexo', '$telefone')");
 }
 ?>
-
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,4 +34,4 @@ if(isset($_POST['btncadastro'])) {
 
     <a href="C:\xampp\htdocs\StartCode\paginas\cadastro.html" target="_blank">Entre em sua conta</a>
 </body>
-</html>
+</html> -->
