@@ -8,9 +8,9 @@ class Usuario
     {
         global $pdo;
         try {
-            $pdo = new PDO("mysql:dbname".$nome.";host=".$host, $usuario, $senha)
+            $pdo = new PDO("mysql:dbname" . $nome."host=".$host, $usuario, $senha)
         } catch (PDOException $e) {
-            $msgErro = $e->getMessage()
+            $msgErro = $e->getMessage();
         }
         
     }
@@ -29,3 +29,5 @@ class Usuario
 
     }
 }
+
+>?

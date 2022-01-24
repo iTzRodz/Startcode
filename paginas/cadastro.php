@@ -6,7 +6,7 @@
 
 if(isset($_POST['btncadastro'])) {
     
-    include_once('C:\xampp\htdocs\StartCode\BancoDados\configBanco.php');
+    include_once('BancoDados/configBanco.php');
     
     $email = $_POST['email'];
     $nome = $_POST['nome'];
